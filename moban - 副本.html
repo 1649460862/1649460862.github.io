@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0;
+    padding: 0;}
+    section{
+        background-color: #bdd2eb ;
+        position: fixed;
+        top: 15%;
+        right: 0;
+        left: 10em;
+        bottom: 100px;
+     
+    }
+    header{
+        position: fixed;
+    width: 100%;
+    height: 15%;
+    display: block;
+    background: #bdd2eb;}
+    aside{position: fixed;
+    width: 10em;
+    top: 15%;
+    bottom: 100px;
+    background:#bdd2eb;}
+     /* div {position: absolute;
+    margin-left: 800px;} */
+    img{width: 200px;
+    height: 300px;}
+    .ir{color: brown;
+    font-size: 3rem;
+    font-family: 楷体 ;
+    font-weight: bold;
+    }
+    tr{
+    list-style: none;}
+    a{text-decoration: none;
+    color: rgb(145, 20, 97);}
+  
+    footer{
+        background-color: #bdd2eb ;
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        /* top: auto; */
+        bottom: 0;
+        display: block;
+    }
+    #demo {
+        position: absolute ;
+        left: 800px;
+        top: 30px;
+        }
+    .demo-nav {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .demo-nav li {
+            line-height: 40px;
+            padding: 0 10px;
+            background: #09f;
+            color: #fff;
+            position: relative;
+        }
+
+        .demo-nav li ul {
+            position: absolute;
+            left: 0;
+            top: 40px;
+            /*height: 0;*/
+            /*overflow: hidden;*/
+        }
+
+        .demo-nav li ul li {
+            float: none;
+            transition: all .3s;
+            background: #f90;
+            opacity: 0;
+        }
+
+        .demo-nav li ul li:nth-of-type(1n) {
+            transform: translate3d(100%, 0, 0);
+        }
+
+        .demo-nav li ul li:nth-of-type(2n) {
+            transform: translate3d(-100%, 0, 0);
+        }
+
+        /* .demo-nav li:hover ul {
+            /*overflow: visible;*/
+/* } */
+
+        .demo-nav li:hover ul li {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .demo-nav li ul li:nth-of-type(2) {
+            transition-delay: .1s;
+        }
+
+        .demo-nav li ul li:nth-of-type(3) {
+            transition-delay: .2s;
+        }
+
+        .demo-nav li ul li:nth-of-type(4) {
+            transition-delay: .3s;
+        }
+        .demo-nav li ul li:nth-of-type(5) {
+            transition-delay: .4s;
+        }
+
+        .demo-nav li ul li:nth-of-type(6) {
+            transition-delay: .5s;
+        }
+
+        .demo-nav li ul li:nth-of-type(7) {
+            transition-delay: .6s;
+        }
+        .demo-nav li ul li:nth-of-type(8) {
+            transition-delay: .7s;
+        }
+
+        .demo-nav li ul li:nth-of-type(9) {
+            transition-delay: .8s;
+        }
+
+        .demo-nav li ul li:nth-of-type(10) {
+            transition-delay: .9s;
+        }
+       .rt{
+           /* position:absolute; */
+       /* margin-left: 600px; */
+       float: left;
+       /* left: 200px;
+       top: 500px; */
+       }
+        
+         #ij{list-style: none;
+         /* bottom: 0; */
+         } 
+         #ij li{
+             /* display: inline-block; */
+             /* position: absolute; */
+             /* float: left; */
+             /* bottom:  0; */
+             /* margin-left: 10px; */
+         }  
+         .shown{display: block;}
+        .hidden{display: none;}
+        #word{
+            width: 100%;
+            /* height: 20px; */
+            border:burlywood 1px solid;
+            position: absolute;
+            top: 70px;
+         }
+         /* #wh{
+            width: 10px;
+            height: 20px;
+            border: yellow 1px solid;
+            position: absolute;
+            top: 70px;
+            left: 100%;
+        }  */
+    ol{
+        position: absolute;
+        top: 350px;
+        left: 815px;
+        /* color: lightskyblue; */
+    }
+    ol li{
+        color: mediumaquamarine;
+    }
+       #wa{
+           position: absolute;
+           left: 0px;
+           top: 348px;
+           color: olive;
+           font-size: 2rem;
+           font-family: 楷体;
+       }
+       #wz{
+           position: absolute;
+           top: 375px;
+           left: 0;
+           width: 550px;
+           height: 30px;
+       }
+       a:hover{
+           color: olivedrab;
+       }
+    #ok{
+        position: absolute;
+        top: 70px;
+        display: inline-block;
+        list-style: none;
+    }
+    #ok li{
+        float: left;
+        margin-left: 150px;
+        margin-top: 10px;
+    }
+    #uk{
+        position: absolute;
+        top: 330px;
+        left: 815px;
+    }
+</style>
+<body>
+    
+    <header>
+        <span class="ir">我最喜欢的美食</span><p></p>
+        <span>201916180306 阳菲，爱好听歌看剧慢性子，前一位是邹湘宇 201916180305，后一位是韦艳春201916180307</span>
+   
+
+    </header>
+
+   
+  <aside>
+        <div class="demo-nav">
+            <ul class="menu fllil">
+                <li>品牌名称
+                    <ul class="sub-menu">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>卜柯</li>
+                        <li>丹麦曲奇</li>
+                        <li>红茶曲奇</li>
+                    </ul>
+                </li>
+                <li>原料
+                    <ul class="sub-menu">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>黄油</li>
+                        <li>鸡蛋</li>
+                        <li>面粉</li>
+                        <li>牛奶</li>
+                        <li>白砂糖</li>
+                    </ul>
+                </li>
+                <li>所用工具
+                    <ul class="sub-menu">
+                        <li>a</li>
+                        <li>b</li>
+                        <li>烤箱</li>
+                        <li>容器若干</li>
+                        <li>裱花袋</li>
+                    </ul>
+                </li>
+                <li>优点
+                    <ul class="sub-menu">
+                        <li>a</li>
+                        <li>美味</li>
+                        <li>补充能量</li>
+                        <li>方便</li>
+                    </ul>
+                </li>
+                <li>更多</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    
+    </aside>
+   <section>
+       <span class="rt">
+  <table>
+      <tr>
+          <td>红茶曲奇</td>
+          <td>卜柯</td>
+          <td>丹麦曲奇</td>
+      </tr>
+      <tr>
+          <td><img src="qu.jpg" alt=""></td>
+          <td><img src="meishi2.jpg" alt=""></td>
+          <td><img src="qu2.jpg" alt=""></td>
+      </tr>
+      <tr>
+          <td><a href="http://www.quyuan99.com/products/hcqq.html">了解更多</a> </td>
+          <td><a href="https://baike.baidu.com/item/%E5%8D%9C%E7%8F%82/9518916?fr=aladdin">了解更多</a></td>
+          <td><a href="http://www.quyuan99.com/products/dmqqbg.html">了解更多</a></td>
+      </tr>
+      
+  </table>
+    </span>
+           <span id="wa">关于曲奇：</span>      <p></p> 
+           <span id="wz">Cookie，小甜饼，亦叫做曲奇饼，（英音：'kuki美音：'kukɪ），是由香港传入的粤语译音，曲奇饼在美国与加拿大解释为细小而扁平的蛋榚式的饼干，而英语的COOKIE是由德文koekje来的，意为"细小的蛋榚"。
+               这个字在英式英语主要用作分辨美式饼干如"朱古力饼干"。第一次制造的曲奇是由数片细小的蛋榚组合而成，据考据，是由伊朗人发明的。另外，Cookies也是香港的一队歌唱组合</span> 
+
+    <div id="demo" style="overflow:hidden;height:280px;width:600px;">
+        <table align=left cellpadding=0 cellspace=0 border=0>
+            <tr>
+                <td id="demo1" valign=top nowrap="nowrap">
+        <img src="ms4.jpg">
+         <!-- <img src="you.jpg">  -->
+        <img src="ms5.jpg">
+        <img src="ms6.jpg">
+        </td>
+        <td id=demo2 valign=top>
+            <!-- <img src="we2.jpg" alt=""> -->
+        </td>
+    </tr>
+</table>
+</div>
+<li id="uk">做法</li>
+<ol>
+    <!-- <li id="uk">做法</li> -->
+    <li>黄油常温下软化，用打蛋器打发</li>
+    <li>黄油打发好后，分次加糖粉和细砂糖打发至黄油变得更加顺滑</li>
+    <li>加入鸡蛋，用打蛋器进行搅拌，使鸡蛋完全融合其中，加入牛奶和香草精拌均匀</li>
+    <li>筛入混合后的面粉和玉米淀粉，用刮刀搅拌至没有干粉</li>
+    <li>装入裱花袋，用手唔一唔(目的是为了让面糊更软，易挤出花形)，挤在铺好锡纸的烤盘上</li>
+    <li>烤箱180度，上下火，预热5分钟后，将烤盘放入烤箱中上层烤12分钟左右即可，具体时间根据曲奇大小不同和烤箱温度不同自行掌握</li>
+</ol>
+</section>
+<footer>
+
+    <p id="word"></p>
+    <!-- <p id="wh"></p> -->
+    <!-- <div id="rd">菜单</div>
+    <ul id="ik">
+        <li>作者</li>
+        <li>名称</li>
+        <li>内容</li>
+    </ul> -->
+   <ul id="ok">
+       <li > <a href="#">观看视频</a> </li>
+       <li><a href="#">进入地图</a></li>
+       <li><a href="#">发现更多</a></li>
+   </ul>
+        
+</footer>
+        <script>
+            var speed = 30;
+            demo2.innerHTML = demo1.innerHTML;
+            function Marquee() {
+            if(demo.scrollLeft<=0)
+            demo.scrollLeft+=demo2.offsetWidth
+            else {
+            demo.scrollLeft--;
+            }
+            };
+            var MyMar = setInterval(Marquee, speed);
+demo.onmouseover = function() {
+clearInterval(MyMar)
+};
+demo.onmouseout = function() {
+MyMar = setInterval(Marquee, speed)
+};
+
+var cd =document.getElementsById("#rd")[0];
+var cdx=document.getElementsById("#ik")[0];
+cd.onmouseover =function(){
+    cdx.IdName="shown"
+}
+       cd.onmouseleave=function(){
+           cdx.IdName="hidden"
+       }
+       cdx.onmouseover=function(){
+           cdx.IdName="shown"
+       }
+       cdx.onmouseleave=function(){
+           cdx.IdName="hidden"
+       }
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
